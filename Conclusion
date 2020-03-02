@@ -1,0 +1,17 @@
+Based of the information gained from analysis.py, Putney seems to be the best place for John to live.
+The datasets were cleaned and only data pertaining to the time he spends outside each day was considered.(assuming
+his house will be safe and the air well filtered). Putney has a lower mean value for each species than Oxford and
+so should be safer.
+I found python to be be useful in analysing the datasets. Finding any error in the datasets such as unnecessary spaces
+or capital letters in the wrong place were easily identified using .unique() function and were easily corrected.
+Using .groupby('Value').size() was a useful function in finding negative values that were to be removed.
+These may have some significance  to the dataset but there was lack of evidence supporting this. NaN values
+were also dropped. I understand dropping negative values and NaN values may skew the data.
+Provisional/Ratified column in the data was interesting as the majority of the Oxford data and all of
+the Putney data was provisional. According to uk-air.defra.gov.uk, provisional data undergoes basic
+screening and are likely to be of lower accuracy and reliability. The same website explains that Ratification of the
+data is a "detailed manual check of the data set"; accounting for any instrumental problems as well as considering the
+validity of the data by using experienced air quality consultants to review the data.
+For further analysis I would use much larger data sets and I would try to work with only Ratified data to obtain a
+more reliable result
+
